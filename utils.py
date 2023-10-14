@@ -33,6 +33,7 @@ def generate_barcode(row):
         barcode = row[sheet_titles['BARCODE']]
     except IndexError:
         barcode = None
+
     return barcode
 
 

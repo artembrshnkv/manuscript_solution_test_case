@@ -57,7 +57,9 @@ with sq.connect(database='manuscript_solution_test_case.db') as conn:
         SELECT ID_COUNTRY FROM COUNTRY
         WHERE NAME_COUNTRY = (?)
         """,
-                    (country_name, ))
+                    (country_name, )
+                    )
+
         return cur.fetchone()[0]
 
 
